@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int wd;
+    float a_c;
+    
+    cout<<"Enter the initial account balance:";
+    cin>>a_c;
+    cout<<"Enter the Withdrawl amount=";
+    cin>>wd;
+    
+    if(wd%5==0 && wd<a_c-0.5)
+    {
+        a_c=a_c-(wd+0.5);
+    }
+    else{
+        cout<<"Withdraw can't be processed due to Insufficient amount"<<endl;
+    }
+    cout<<"The remaining Account Balance is:"<<a_c;
+    // Write C++ code here
+    
+    return 0;
+}
